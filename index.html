@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="IMAGES/iconblack.png" type="image/x-icon">
+    <!-- Link to Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="landingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Clothing Brand</title>
+</head>
+<body>
+
+    <!-- ============= NAVIGATION ============= -->
+    <header class="header">
+        <ul class="logolist">
+        <li><a href="#home" class="logo">
+            <img src="IMAGES/iconblack.png" alt="Clothing brand logo" />
+        </a></li>
+        <li><a href="#home" class="logotitle"><h2>BYND</h2></a></li>
+        </ul>
+        <div class="menu_container">
+            <div class="menubtn" onclick="toggleMenu()" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav_link">
+                    <i class="fa-sharp fa-solid fa-house"></i> Home</a>
+                <a href="#shop" class="nav_link"> 
+                    <i class="fa-solid fa-shop"></i> Gallery</a>
+                <a href="#search" class="nav_link">
+                    <i class="fa-solid fa-magnifying-glass"></i>Search</a>
+            </nav>
+        </div>
+
+        <div class="nav_listright">
+            <div><a href="orderpage.html" class="nav_link">
+                <span id="cart-counter-unique_item_id">0</span>
+                <i class="fa-solid fa-cart-shopping"></i>Shopping Cart</a></div>
+            <div><a href="#signin" class="nav_link">
+                <i class="fas fa-sign-in-alt"></i> Sign In</a></div>
+        </div>
+    </header>
+
+    <!-- ============= MAIN ============= -->
+    <main class="main">
+
+        <!-- ============= HOME ============= -->
+        <section class="home" id="home">
+            <div>
+                <div class="home_data">
+                    <h1 class="home_title">
+                        DISCOVER YOUR STYLE!
+                    </h1>
+                    <p class="home_description">
+                        "Explore our latest collection and express yourself through fashion."
+                    </p>
+                    <a href="#shop" class="button button--flex">
+                        SHOP NOW! <i class="fa-solid fa-shop"></i></i>
+                    </a>
+                </div>
+                <div class="home_social">
+                    <span class="home_social-follow">Follow Us On:</span>
+                    <div class="home_social-links">
+                        <a href="https://www.facebook.com/markguanez" target="_blank" class="home_social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_mrkmgnz/" target="_blank" class="home_social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home_social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!-- ============= CATEGORIES ============= -->
+            <section class="categories">
+                <div class="container">
+                    <h2 class="title_section">Categories</h2>
+                    <p>Explore our wide range of categories.</p>
+                    <a class="category-link" href="#summer-wear">
+                        <img src="IMAGES/bgcategory/bgcategorysummer.png" alt="Summer Wear">
+                        <h3>Summer Wear</h3>
+                    </a>
+                    <a class="category-link" href="#casual-wear">
+                        <img src="IMAGES/bgcategory/bgcategorycasual.png" alt="Casual Wear">
+                        <h3>Casual Wear</h3>
+                    </a>
+                    <a class="category-link" href="#sports-wear">
+                        <img src="IMAGES/bgcategory/bgcategorysports.png" alt="Sports Wear">
+                        <h3>Sports Wear</h3>
+                    </a>
+                    <a class="category-link" href="#formal-wear">
+                        <img src="IMAGES/bgcategory/bgcategoryformal.png" alt="Formal Wear">
+                        <h3>Formal Wear</h3>
+                    </a>
+                </div>
+            </section>
+
+        <!-- ============= SHOP ============= -->
+        <section class="shop" id="shop">
+                    <h1 class="shop__title">EXPLORE OUR COLLECTION</h1>
+                    <p class="shop__description">
+                        Find the perfect outfit for every occasion. Discover the latest trends in fashion and elevate your style.
+                    </p>
+            
+            <!-- Category: Summer Wear -->
+                <div class="category">
+                    <h2 class="category__title" id="summer-wear">Summer Wear</h2>
+                        <div class="category__content owl-carousel owl-theme">
+                            <div class="slider-card">
+                                <div class="image_container">
+                                    <img src="IMAGES/summerItems/summer1.jpg" alt="Summer Wear 1">
+                                </div>
+                                <h5><b>BYND Serenity</b></h5>
+                                <p>SERENITY Padded 3 in 1 Summer Outfit Sleeveless Top Short And SquarePant Set for Women</p>
+                                <p><b>Price:</b> Php650.00</p>
+                                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                            <div class="slider-card">
+                                <div class="image_container">
+                                    <img src="IMAGES/summerItems/summer2.jpg" alt="Summer Wear 2">
+                                </div>
+                                <h5><b>Black 2 in 1 Swimsuit</b></h5>
+                                <p>Sexy padded Push-up Summer Swimsuit with shorts</p>
+                                <p><b>Price:</b> Php700.00</p>
+                                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                            <div class="slider-card">
+                                <div class="image_container">
+                                    <img src="IMAGES/summerItems/summer3.jpg" alt="Summer Wear 3">
+                                </div>
+                                <h5><b>Hawaiian Combo</b></h5>
+                                <p>Polo shirt, and dress hawaiian couple matching beach outfits set for mother, father, son, and daughter</p>
+                                <p><b>Price:</b> Php850.00</p>
+                                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                            <div class="slider-card">
+                                <div class="image_container">
+                                    <img src="IMAGES/summerItems/summer4.jpg" alt="Summer Wear 4">
+                                </div>
+                                <h5><b>BYND Beach Polo</b></h5>
+                                <p>Beach Design Summer Attire Polo Shirts For Men</p>
+                                <p><b>Price:</b> Php350.00</p>
+                                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                            <div class="slider-card">
+                                <div class="image_container">
+                                    <img src="IMAGES/summerItems/summer5.jpg" alt="Summer Wear 5">
+                                </div>
+                                <h5><b>BYND Floral Polo</b></h5>
+                                <p>Summer Vacation Hawaiian Short Sleeves Floral Polo Beach Party Outfit for Men</p>
+                                <p><b>Price:</b> Php300.00</p>
+                                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                </div>
+
+    <!-- Category: Casual Wear -->
+    <div class="category">
+        <h2 class="category__title" id="casual-wear">Casual Wear</h2>
+        <div class="category__content owl-carousel owl-theme">
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/casualItems/casual1.jpg">
+                </div>
+                <h5><b>BYND Trouser</b></h5>
+                <p>High waist trouser pants wide leg plain casual outfit.</p>
+                <p><b>Price:</b> Php300.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/casualItems/casual2.jpg">
+                </div>
+                <h5><b>BYND Chiffon Blouse</b></h5>
+                <p>Korean style white chiffon blouse for women loose thin long sleeve top sunscreen shirt</p>
+                <p><b>Price:</b> Php500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/casualItems/casual3.jpg">
+                </div>
+                <h5><b>Sweater, Sando & Short Combo</b></h5>
+                <p>New Arrival 3 in 1 Aesthetic Outfit Korean Style Sweater, Sando & Short For Women Good Quality</p>
+                <p><b>Price:</b> Php650.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/casualItems/casual4.jpg">
+                </div>
+                <h5><b>BYND Cargo Pants</b></h5>
+                <p>Korean Style Pants Overalls Men Jogging Pants Loose Legged Casual</p>
+                <p><b>Price:</b> Php450.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="casual_wear1.jpg">
+                </div>
+                <h5><b>BYND Oversize</b></h5>
+                <p>#1 Best Seller</p>
+                <p><b>Price:</b> Php500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category: Sports Wear -->
+    <div class="category">
+        <h2 class="category__title" id="sports-wear">Sports Wear</h2>
+        <div class="category__content owl-carousel owl-theme">
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/sportsItem/sports1.jpg" alt="Sports Wear 1">
+                </div>
+                <h5><b>BNYD Lifting Shorts</b></h5>
+                <p>BNYD Peachy shorts FREE SIZE BUTT LIFTING sport shorts for women fitness yoga cycling summer</p>
+                <p><b>Price:</b> Php200.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/sportsItem/sports2.jpg" alt="Sports Wear 1">
+                </div>
+                <h5><b>BYND workout set for women</b></h5>
+                <p>BYND Workout Clothes Yoga Set Sports Wear Active Wear Gym Clothes For Women Contrast Color Gym Shirt Yoga Top Short Sleeve With Pad</p>
+                <p><b>Price:</b> Php500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/sportsItem/sports3.jpg" alt="Sports Wear 1">
+                </div>
+                <h5><b>BYND Compression Shirt</b></h5>
+                <p>BYND Men Compression Fitness Short Sleeve Shirt Tights Basketball Gym Body building T-Shirt</p>
+                <p><b>Price:</b> Php250.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/sportsItem/sports4.jpg" alt="Sports Wear 1">
+                </div>
+                <h5><b>BYND Tank Top</b></h5>
+                <p>Plain Cotton Sando For Mens High Quality Sando For Men</p>
+                <p><b>Price:</b> Php150.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/sportsItem/sports5.jpg" alt="Sports Wear 1">
+                </div>
+                <h5><b>BYND Drifit Shirt and Shorts Set</b></h5>
+                <p>Men's Quick-Dry Short Sleeve Ice Silk T-Shirt And Shorts Set For Running, Cycling, Basketball, Fitness Gym Clothes Men Set</p>
+                <p><b>Price:</b> Php300.</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Category: Formal Wear -->
+    <div class="category">
+        <h2 class="category__title" id="formal-wear">Formal Wear</h2>
+        <div class="category__content owl-carousel owl-theme">
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/formalItems/formal1.webp" alt="Formal Wear 1">
+                </div>
+                <h5><b>BYND Trouser Pants</b></h5>
+                <p>Long Silk Loose End Trouser Pants</p>
+                <p><b>Price:</b> Php300.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/formalItems/formal2.webp" alt="Formal Wear 2">
+                </div>
+                <h5><b>BYND Suit Vest</b></h5>
+                <p>Plus Size Formal Men Solid Color Suit Vest Single BReasted Buiseness Waistcoat</p>
+                <p><b>Price:</b> Php350.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/formalItems/formal3.webp" alt="Formal Wear 3">
+                </div>
+                <h5><b>BYND Men's Three Piece Suit Slim Fit</b></h5>
+                <p>BYND Men's Three Piece Suit Slim Fit, Casual Suit Business Formal Wear GRoom Wed</p>
+                <p><b>Price:</b> Php600.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/formalItems/formal4.webp" alt="Formal Wear 4">
+                </div>
+                <h5><b>BYND Formal Dress</b></h5>
+                <p>Gray Dress for women plus size formal for graduation sexy bodycon</p>
+                <p><b>Price:</b> Php400.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="slider-card">
+                <div class="image_container">
+                    <img src="IMAGES/formalItems/formal5.webp" alt="Formal Wear 5">
+                </div>
+                <h5><b>BYND Dress with Blazer</b></h5>
+                <p>Spaghetti dress with blazer 2 in 1 Office Outwear</p>
+                <p><b>Price:</b> Php500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+        </section>
+
+<!-- ============= BEST SELLERS ============= -->
+<section class="best-sellers">
+    <div class="best_container">
+        <h2 class="title_section">Best Sellers</h2>
+        <p>Explore our top-selling items.</p>
+        <div class="best-seller-items">
+            <div class="item">\
+                <div class="image_container">
+                <img src="" alt="Product 1">
+                </div>
+                <h3>BYND OverSized</h3>
+                <p>#1 Top Selling</p>
+                <p>Price: Php500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="IMAGES/casualItems/casual3.jpg" alt="Product 2">
+                <h3>Sweater, Sando & Short Combo</h3>
+                <p>#2 Top Selling</p>
+                <p>Price: Php650.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="IMAGES/summerItems/summer3.jpg" alt="Product 3">
+                <h3>Hawaiian Combo</h3>
+                <p>#3 Top Selling</p>
+                <p>Price: Php850.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============= New Products ============= -->
+<section class="new-products">
+    <div class="new_container">
+        <h2 class="title_section">New Products</h2>
+        <p>Discover our latest arrivals.</p>
+        <div class="new-products-carousel owl-carousel owl-theme">
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product1.jpg" alt="Product 1">
+                <h3>BYND Summer Outfit Set</h3>
+                <p>Calming Design 3 in 1 Outfit for women on beach</p>
+                <p>Price: Php 1500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product2.jpg" alt="Product 2">
+                <h3>BYND Oversized</h3>
+                <p>Women's Car and Letter Printed T-shirt</p>
+                <p>Price: Php300.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product3.jpg" alt="Product 3">
+                <h3>BYND Vest & JumpSuit</h3>
+                <p>BYND Girls' Sleeveless Cardigan Vest and Jumpsuit</p>
+                <p>Price: Php450.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product4.jpg" alt="Product4">
+                <h3>BYND Tokyo Oversized</h3>
+                <p>Urban Chill Loose Fit Men's Printed Knitted Leisure T-shirt</p>
+                <p>Price: Php400.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product5.jpg" alt="Product 5">
+                <h3>BYND Bikini Crop Top Combo</h3>
+                <p>Ladies Printed Thin Long Sleeves Cami Bikini Crop top and Low Rise Thong Set</p>
+                <p>Price: Php500.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product6.jpg" alt="Product 6">
+                <h3>BYND Beach Set</h3>
+                <p>Khaki Set pattern beach sun, hat and round woven bag, suitable for vacation travel</p>
+                <p>Price: Php300.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="/IMAGES/newProducts/product7.jpg" alt="Product 7">
+                <h3>BYND Textured Shirt</h3>
+                <p>Teen Boys' Short Sleeve T-shirt with textured Letter Patch</p>
+                <p>Price: Php300.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <div class="new_item">
+                <img src="IMAGES/newProducts/product8.jpg" alt="Product 8">
+                <h3>BYND Top and Leg pants Combo</h3>
+                <p>Lettuce trim halter Top and Flare Leg Pants</p>
+                <p>Price: Php350.00</p>
+                <button class="add-to-cart-button" data-item-id="unique_item_id"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footertitle_banner">Contact Information & Address</h2>
+                <p>5285 Pulong Buhangin,</p>
+                <p>Bulacan, Santa Maria</p>
+                <p>Phone: 09473273898</p>
+                <p>Email: adrianmarkguanez@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h2 class="footertitle_banner">Navigation</h2>
+                <ul>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#TnC">Terms and Conditions</a></li>
+                    <li><a href="#Feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2 class="footertitle_banner">Useful Links</h2>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2 class="footertitle_banner">Stay Connected</h2>
+                <a href="https://www.facebook.com/markguanez" target="_blank" class="home_social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/_mrkmgnz/" target="_blank" class="home_social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="home_social-link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div style="clear:both;"></div> <!-- Clearing element -->
+        </div>
+    </footer>    
+            <!-- Link to jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Link to Owl Carousel JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <!-- Link to custom JavaScript -->
+            <script src="landing.js"></script>
+</body>
+</html>
