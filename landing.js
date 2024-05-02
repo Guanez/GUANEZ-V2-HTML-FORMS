@@ -1,17 +1,15 @@
 $(document).ready(function(){
     $(".category__content").owlCarousel({
-        items: 5,
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        margin: 20, // Add margin between items
+        margin: 20,
         responsive:{
-            // Responsive breakpoints
             0:{
                 items:1
             },
-            400:{
+            450:{
                 items:2
             },
             768:{
@@ -24,6 +22,7 @@ $(document).ready(function(){
     });
 });
 
+
 $(document).ready(function(){
     $('.new-products-carousel').owlCarousel({
         items: 8,
@@ -31,9 +30,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        margin: 20, // Add margin between items
+        margin: 20,
         responsive:{
-            // Responsive breakpoints
             0:{
                 items:1
             },

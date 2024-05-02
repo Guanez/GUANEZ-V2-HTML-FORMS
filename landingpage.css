@@ -523,35 +523,10 @@ body {
     }
 }
 
-/* Containers for Best Sellers, New Products, and Categories */
-.best-sellers,
-.new-products,
 .categories {
     background-color: #e4e4e4;
     padding: 50px 0;
     text-align: center;
-}
-
-.best-sellers .container,
-.new-products .container,
-.categories .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.best-sellers h2,
-.new-products h2,
-.categories h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.best-sellers p,
-.new-products p,
-.categories p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
 }
 
 .title_section {
